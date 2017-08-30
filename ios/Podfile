@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DevTalk' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for DevTalk
+  pod 'MobileCenter/Crashes', '~> 0.11.2'
+  pod 'MobileCenter/Analytics', '~> 0.11.2'
+  pod 'RNMobileCenterShared', '~> 0.8.1'
+
+  
+
+  target 'DevTalkTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'DevTalk-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for DevTalk-tvOS
+
+  target 'DevTalk-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
